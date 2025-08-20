@@ -1,0 +1,288 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - button "Chats" [pressed]: "17"
+  - button "Updates in Status"
+  - button "Channels"
+  - button "Communities"
+  - button "Settings"
+  - button "Profile":
+    - img
+- button "Close"
+- button "Crop and rotate"
+- button "Filter"
+- button "Paint"
+- button "Text"
+- button "Shapes"
+- button "Blur"
+- button "Emoji"
+- button "Sticker"
+- button "This media is not HD resolution."
+- button "Download"
+- textbox "Add a caption":
+  - paragraph
+- button "Open emojis panel"
+- list:
+  - listitem:
+    - button "Image thumbnail":
+      - button "Image thumbnail":
+        - button
+        - img "Preview"
+- button "Add file"
+- button "Send"
+- banner:
+  - banner:
+    - heading "WhatsApp" [level=1]:
+      - img "wa-wordmark-refreshed"
+    - button "New chat"
+    - button "Menu"
+- button "search-refreshed-thin":
+  - img "search-refreshed-thin"
+- textbox "Search input textbox":
+  - paragraph
+- tablist "chat-list-filters":
+  - tab "All" [selected]
+  - tab "Unread"
+  - tab "Favorites"
+  - tab "Groups"
+- button
+- button "Turn on notifications"
+- button "Close"
+- button "Get notified of new messages on your computer. Turn on desktop notifications":
+  - text: Get notified of new messages on your computer.
+  - button "Turn on desktop notifications"
+- grid "Chat list":
+  - listitem:
+    - button "+60 10-278 6345 (You) Friday I reached office at 8:00 Pinned chat":
+      - img
+      - gridcell "+60 10-278 6345 (You) Friday"
+      - text: I reached office at 8:00
+      - gridcell "Pinned chat"
+  - listitem:
+    - button "Whatsapp Automation 10:45 AM Please upload an image using WhatsApp (click a camera icon and choose a photo) Selected Open the chat context menu":
+      - img
+      - gridcell "Whatsapp Automation 10:45 AM"
+      - text: Please upload an image using WhatsApp (click a camera icon and choose a photo)
+      - gridcell "Selected Open the chat context menu"
+  - listitem:
+    - 'button "The D Group (TDG) 10:38 AM +60 19-989 6423 : Hi Team, We are going to have badminton this Friday, 22nd August 2025. If you''re interested in joining, let’s have some fun and stay active together! 🏸 Stay tuned for the venue & time update 😇 Please cast your vote before Wednesday, 12am. Thank you 🤍 💙"':
+      - img
+      - gridcell "The D Group (TDG) 10:38 AM"
+      - text: "+60 19-989 6423 : Hi Team, We are going to have badminton this Friday, 22nd August 2025. If you're interested in joining, let’s have some fun and stay active together!"
+      - img "🏸"
+      - text: Stay tuned for the venue & time update
+      - img "😇"
+      - text: Please cast your vote before Wednesday, 12am. Thank you
+      - img "🤍"
+      - img "💙"
+      - gridcell
+  - listitem:
+    - button "MR.ARUMUGAM BACKIAM FMLY ♥️ 10:36 AM Group members have changed. Click to view 1 unread message":
+      - img
+      - gridcell "MR.ARUMUGAM BACKIAM FMLY ♥️ 10:36 AM":
+        - text: MR.ARUMUGAM BACKIAM FMLY
+        - img "♥️"
+        - text: 10:36 AM
+      - text: Group members have changed. Click to view
+      - gridcell "1 unread message": "1"
+  - listitem:
+    - button "Vicky Anna 9:59 AM Good morning tambi, have a wonderful day! 🦋 🪷 💕 1 unread message":
+      - img
+      - gridcell "Vicky Anna 9:59 AM"
+      - text: Good morning tambi, have a wonderful day!
+      - img "🦋"
+      - img "🪷"
+      - img "💕"
+      - gridcell "1 unread message": "1"
+  - listitem:
+    - button "JobsEdu4All Group3 9:53 AM Group members have changed. Click to view Muted chat 251 unread messages":
+      - img
+      - gridcell "JobsEdu4All Group3 9:53 AM"
+      - text: Group members have changed. Click to view
+      - gridcell "Muted chat 251 unread messages": "251"
+  - listitem:
+    - 'button "Kaigeh 9:29 AM Manisha : This message can''t be displayed here. Please open WhatsApp on your phone to view the message. 1 unread message"':
+      - img
+      - gridcell "Kaigeh 9:29 AM"
+      - text: "Manisha : This message can't be displayed here. Please open WhatsApp on your phone to view the message."
+      - gridcell "1 unread message": "1"
+  - listitem:
+    - 'button "[Work] Code Monkeys 9:20 AM Atika TDG : https://sb-tdgloyalty.thedgroup.com.my?referCode=wdGLiadnLq"':
+      - img
+      - gridcell "[Work] Code Monkeys 9:20 AM"
+      - text: "Atika TDG : https://sb-tdgloyalty.thedgroup.com.my?referCode=wdGLiadnLq"
+      - gridcell
+  - listitem:
+    - 'button "MARAN N PARVATHY''S FAMILY 8:15 AM Appa <3 reacted 👌 to: \" Appa Saya dah sampai office\""':
+      - img
+      - gridcell "MARAN N PARVATHY'S FAMILY 8:15 AM"
+      - text: Appa <3 reacted
+      - img "👌"
+      - text: "to: \" Appa Saya dah sampai office\""
+      - gridcell
+  - listitem:
+    - button "Freddy 8:15 AM 😬":
+      - gridcell "Freddy 8:15 AM"
+      - img "😬"
+      - gridcell
+  - listitem:
+    - button "Satya Sri (Dinesh’s Sister) Yesterday 🤣 🤣 🤣 🤣 🤣":
+      - img
+      - gridcell "Satya Sri (Dinesh’s Sister) Yesterday"
+      - img "🤣"
+      - img "🤣"
+      - img "🤣"
+      - img "🤣"
+      - img "🤣"
+      - gridcell
+  - listitem:
+    - 'button "Ensure Gold Yesterday ✅ Great news! Your receipt has been approved, and here’s your RM10 reload pin : watsontesting1235 🎉 Thank you for being a part of the Ensure Gold family! 💙 💛 Enjoy your reward! 😊 We hope to see you again! Need help? Contact us at 1800-88-6233 — we’re here to assist! 😊"':
+      - img
+      - gridcell "Ensure Gold Yesterday"
+      - img "✅"
+      - text: "Great news! Your receipt has been approved, and here’s your RM10 reload pin : watsontesting1235"
+      - img "🎉"
+      - text: Thank you for being a part of the Ensure Gold family!
+      - img "💙"
+      - img "💛"
+      - text: Enjoy your reward!
+      - img "😊"
+      - text: We hope to see you again! Need help? Contact us at 1800-88-6233 — we’re here to assist!
+      - img "😊"
+      - gridcell
+  - listitem:
+    - 'button "Software Engineering - TDG Yesterday Sulaiman TDG : It should work now in sb"':
+      - gridcell "Software Engineering - TDG Yesterday"
+      - text: "Sulaiman TDG : It should work now in sb"
+      - gridcell
+  - listitem:
+    - button "Artur Ig Yesterday https://vm.tiktok.com/ZNdCGrCty/ 1 unread message":
+      - img
+      - gridcell "Artur Ig Yesterday"
+      - text: https://vm.tiktok.com/ZNdCGrCty/
+      - gridcell "1 unread message": "1"
+  - listitem:
+    - button "TDG- Etika Beverage Fair Contest Yesterday Your receipt has been approved. Stay tuned, you might be our contest winner!":
+      - img
+      - gridcell "TDG- Etika Beverage Fair Contest Yesterday"
+      - text: Your receipt has been approved. Stay tuned, you might be our contest winner!
+      - gridcell
+  - listitem:
+    - 'button "🎉 HaPpY fAmIlY 🎉 Yesterday Maybe Aa : https://vt.tiktok.com/ZSAL9dg1d/ Muted chat"':
+      - img
+      - gridcell "🎉 HaPpY fAmIlY 🎉 Yesterday":
+        - img "🎉"
+        - text: HaPpY fAmIlY
+        - img "🎉"
+        - text: Yesterday
+      - text: "~ Aa : https://vt.tiktok.com/ZSAL9dg1d/"
+      - gridcell "Muted chat"
+- text: Your personal messages are
+- button "end-to-end encrypted"
+- button "Get WhatsApp for Windows"
+- banner:
+  - button "Profile details":
+    - img
+  - button "Whatsapp Automation"
+  - button "Search…"
+  - button "Menu"
+- text: Use WhatsApp on your phone to see older messages from before 5/22/2025. Today
+- 'row "Whatsapp Automation: Please upload an image using WhatsApp (click a camera icon and choose a photo) 10:36 AM"': Please upload an image using WhatsApp (click a camera icon and choose a photo) 10:36 AM
+- 'row "You: Open picture 10:36 AM Read Forward media"':
+  - button "Open picture":
+    - img
+    - img
+  - button "10:36 AM Read":
+    - text: 10:36 AM
+    - img "msg-dblcheck"
+  - button "Forward media"
+- 'row "Whatsapp Automation: Please wait while we upload your receipt! 😊 🚀 10:36 AM"':
+  - text: Please wait while we upload your receipt!
+  - img "😊"
+  - img "🚀"
+  - text: 10:36 AM
+- 'row "Whatsapp Automation: Thank you for your submission! 🎉 We’ve received your details and will proceed with validation. ✅ You’ll receive your RM3 Touch ''n Go eWallet PIN within 5 working days once the verification is complete. Reminder: Please keep your receipt and do not discard it until the verification process is fully completed. 10:36 AM Submit New Receipt Chat with Agent"':
+  - text: Thank you for your submission!
+  - img "🎉"
+  - text: We’ve received your details and will proceed with validation.
+  - img "✅"
+  - text: You’ll receive your RM3 Touch 'n Go eWallet PIN within 5 working days once the verification is complete.
+  - strong: Reminder
+  - text: ": Please keep your receipt and do not discard it until the verification process is fully completed. 10:36 AM"
+  - button "Submit New Receipt" [disabled]
+  - button "Chat with Agent"
+- 'row "You: Quoted message Submit New Receipt 10:37 AM Read"':
+  - button "Quoted message":
+    - text: Whatsapp Automation
+    - 'button "Thank you for your submission! 🎉 We’ve received your details and will proceed with validation. ✅ You’ll receive your RM3 Touch ''n Go eWallet PIN within 5 working days once the verification is complete. Reminder: Please keep your receipt and do not discard it until the verification process is fully completed."':
+      - text: Thank you for your submission!
+      - img "🎉"
+      - text: We’ve received your details and will proceed with validation.
+      - img "✅"
+      - text: You’ll receive your RM3 Touch 'n Go eWallet PIN within 5 working days once the verification is complete.
+      - strong: Reminder
+      - text: ": Please keep your receipt and do not discard it until the verification process is fully completed."
+  - text: Submit New Receipt
+  - button "10:37 AM Read":
+    - text: 10:37 AM
+    - img "msg-dblcheck"
+- 'row "Whatsapp Automation: Hi ! Welcome back! Click the button below to submit your receipt! 10:37 AM Submit Receipt"':
+  - text: Hi ! Welcome back! Click the button below to submit your receipt! 10:37 AM
+  - button "Submit Receipt" [disabled]
+- 'row "You: 123456 10:43 AM Read"':
+  - text: "123456"
+  - button "10:43 AM Read":
+    - text: 10:43 AM
+    - img "msg-dblcheck"
+- 'row "Whatsapp Automation: Please key in passcode to proceed 10:43 AM"': Please key in passcode to proceed 10:43 AM
+- 'row "You: Quoted message Submit Receipt 10:43 AM Read"':
+  - button "Quoted message":
+    - text: Whatsapp Automation
+    - button "Hi ! Welcome back! Click the button below to submit your receipt!"
+  - text: Submit Receipt
+  - button "10:43 AM Read":
+    - text: 10:43 AM
+    - img "msg-dblcheck"
+- 'row "Whatsapp Automation: Open picture 10:43 AM Forward media"':
+  - button "Open picture":
+    - img
+    - img
+  - text: 10:43 AM
+  - button "Forward media"
+- 'row "Whatsapp Automation: Please submit your receipt as a proof of purchase. The receipt must contain the following information: a. Store Name b. Receipt Date c. Product Name d. Product amount e. Total receipt amount f. Receipt number ✨ A clear and readable receipt image is very helpful for the validation process ✨ 10:43 AM"':
+  - text: "Please submit your receipt as a proof of purchase. The receipt must contain the following information: a. Store Name b. Receipt Date c. Product Name d. Product amount e. Total receipt amount f. Receipt number"
+  - img "✨"
+  - text: A clear and readable receipt image is very helpful for the validation process
+  - img "✨"
+  - text: 10:43 AM
+- 'row "You: 123456 10:44 AM Read Privacy info"':
+  - text: "123456"
+  - button "10:44 AM Read":
+    - text: 10:44 AM
+    - img "msg-dblcheck"
+  - button "Privacy info"
+- row "This business is now using a secure service from Meta to manage this chat. Click to learn more.":
+  - button "This business is now using a secure service from Meta to manage this chat. Click to learn more."
+- 'row "Whatsapp Automation: Please upload an image using WhatsApp (click a camera icon and choose a photo) 10:44 AM"': Please upload an image using WhatsApp (click a camera icon and choose a photo) 10:44 AM
+- 'row "You: Hello 10:44 AM Read"':
+  - text: Hello
+  - button "10:44 AM Read":
+    - text: 10:44 AM
+    - img "msg-dblcheck"
+- 'row "Whatsapp Automation: Please upload an image using WhatsApp (click a camera icon and choose a photo) 10:44 AM"': Please upload an image using WhatsApp (click a camera icon and choose a photo) 10:44 AM
+- 'row "You: ✅ ✅ ✅ 10:45 AM Read"':
+  - img "✅"
+  - img "✅"
+  - img "✅"
+  - button "10:45 AM Read":
+    - text: 10:45 AM
+    - img "msg-dblcheck"
+- 'row "Whatsapp Automation: Please upload an image using WhatsApp (click a camera icon and choose a photo) 10:45 AM"': Please upload an image using WhatsApp (click a camera icon and choose a photo) 10:45 AM
+- contentinfo:
+  - button "Attach"
+  - button "Expressions picker"
+  - textbox "Type a message":
+    - paragraph
+  - button "Voice message"
+```
