@@ -2,8 +2,8 @@ const { test, expect, chromium } = require('@playwright/test');
 
 // Configuration - Change these values as needed
 const CONFIG = {
-    contactName: "Whatsapp Automation",
-    contactNumber: "+60 3-9771 1660" // Add your contact's phone number here
+    contactName: "Testing Contact",
+    contactNumber: "+60 11-2635 2582" // +60 11-3677 1899 / +60 3-9771 1660 - TDG Add your contact's phone number here
 };
 
 test.describe('WhatsApp Contact Search Tests', () => {
@@ -133,7 +133,8 @@ test.describe('WhatsApp Contact Search Tests', () => {
 
                     // Clear search and try phone number
                     await searchBox.click();
-                    await searchBox.fill('');
+                    await page.keyboard.press('Control+A');
+                    await page.keyboard.press('Delete');
                     await searchBox.type(CONFIG.contactNumber, { delay: 100 });
                     await page.waitForSelector('[data-testid="cell-frame-container"], div[role="listitem"]', { timeout: 1000 }).catch(() => { });
 

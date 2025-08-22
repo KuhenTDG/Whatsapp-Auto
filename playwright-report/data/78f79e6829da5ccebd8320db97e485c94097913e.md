@@ -1,0 +1,293 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - button "Chats" [pressed]: "16"
+  - button "Updates in Status"
+  - button "Channels"
+  - button "Communities"
+  - button "Settings"
+  - button "Profile":
+    - img
+- banner:
+  - banner:
+    - heading "WhatsApp" [level=1]:
+      - img "wa-wordmark-refreshed"
+    - button "New chat"
+    - button "Menu"
+- button "search-refreshed-thin":
+  - img "search-refreshed-thin"
+- textbox "Search input textbox":
+  - paragraph
+- tablist "chat-list-filters":
+  - tab "All" [selected]
+  - tab "Unread"
+  - tab "Favorites"
+  - tab "Groups"
+- button
+- button "Turn on notifications"
+- button "Close"
+- button "Get notified of new messages on your computer. Turn on desktop notifications":
+  - text: Get notified of new messages on your computer.
+  - button "Turn on desktop notifications"
+- button "Archived":
+  - group: Archived
+- grid "Chat list":
+  - listitem:
+    - img
+    - gridcell "+60 10-278 6345 (You) 8:11 AM"
+    - text: Hi all, Morning!
+    - img "☀️"
+    - text: We’ll be having our Team Building tomorrow at UnboxmoU | Boardgame Cafe. I’ve attached the location below
+    - img "🎲"
+    - img "✨"
+    - text: Please be there before 1:00pm so we can start on time
+    - img "⏰"
+    - img "📍"
+    - text: "Venue: UnboxmoU | Boardgame Cafe"
+    - img "📌"
+    - text: "Location: https://maps.app.goo.gl/1UmXhjtEdYT1FyTo8?g_st=aw"
+    - img "⏰"
+    - text: "Time: 1:00pm – 3:00pm See you guys there! Thank you"
+    - img "🙌"
+    - gridcell "Pinned chat"
+  - listitem:
+    - img
+    - gridcell "Whatsapp Automation 8:33 AM"
+    - text: "Please submit your receipt as a proof of purchase. The receipt must contain the following information: a. Store Name b. Receipt Date c. Product Name d. Product amount e. Total receipt amount f. Receipt number"
+    - img "✨"
+    - text: A clear and readable receipt image is very helpful for the validation process
+    - img "✨"
+    - gridcell "Selected Open the chat context menu"
+  - listitem:
+    - img
+    - gridcell "Sulaiman TDG 8:18 AM"
+    - text: "Yes"
+    - gridcell "1 unread message": "1"
+  - listitem:
+    - gridcell "Software Engineering - TDG 8:12 AM"
+    - text: "Mr James : @+60 18-224 8892 Happy Birthday, Have a blast"
+    - gridcell
+  - listitem:
+    - img
+    - gridcell "MARAN N PARVATHY'S FAMILY 7:51 AM"
+    - text: "You : Appa Saya dah sampai office"
+    - gridcell
+  - listitem:
+    - img
+    - gridcell "JobsEdu4All Group3 7:16 AM"
+    - text: Group members have changed. Click to view
+    - gridcell "Muted chat 273 unread messages": "273"
+  - listitem:
+    - img
+    - button "View status":
+      - img
+    - gridcell "Viki Gundu 6:30 AM"
+    - text: This message can't be displayed here. Please open WhatsApp on your phone to view the message.
+    - gridcell
+  - listitem:
+    - img
+    - gridcell "The D Group (TDG) 5:40 AM"
+    - text: "+60 11-6375 4757 : Morning Team! We are going to play Badminton at Megah Rise Badminton Club, Taman Megah! Remember to bring your sportswear and wear appropriate attire okie! Venue: Megah Rise Mall, Taman Megah (https://maps.app.goo.gl/fVUBuQXU35gU1LVQ9) Court: C2 Time: 8pm to 10pm See you there guys! Food and drinks are provided Please bring your own drinking water to prevent dehydration"
+    - gridcell
+  - listitem:
+    - img
+    - gridcell "+60 11-2635 2582 Yesterday"
+    - text: Sorry, but we were unable to verify your receipt.
+    - img "😔"
+    - text: If you believe this is an error and would like to proceed with a manual review, please tap the Proceed button to submit your receipt again.
+    - gridcell
+  - listitem:
+    - img
+    - gridcell "Vicky Anna Yesterday"
+    - text: Reacted
+    - img "😂"
+    - text: "to: \" Wtfff I forgot about thiss\""
+    - gridcell
+  - listitem:
+    - img
+    - gridcell "+60 18-779 2194 Yesterday"
+    - text: You are welcome
+    - gridcell
+  - listitem:
+    - img
+    - gridcell "+60 16-738 0709 Yesterday"
+    - text: alright thank you ya
+    - gridcell
+  - listitem:
+    - img
+    - gridcell "[Work] Code Monkeys Yesterday"
+    - text: "Yuga Bro TDG : Take care and get well soon xin yi"
+    - gridcell
+  - listitem:
+    - img
+    - gridcell "Mr James Yesterday"
+    - text: reminder on this, dont last min
+    - gridcell
+  - listitem:
+    - img
+    - gridcell "🎉 HaPpY fAmIlY 🎉 Yesterday":
+      - img "🎉"
+      - text: HaPpY fAmIlY
+      - img "🎉"
+      - text: Yesterday
+    - text: "~ Aa : https://vt.tiktok.com/ZSAjgNLon/"
+    - gridcell "Muted chat 1 unread message": "1"
+  - listitem:
+    - img
+    - gridcell "MR.ARUMUGAM BACKIAM FMLY ♥️ Yesterday":
+      - text: MR.ARUMUGAM BACKIAM FMLY
+      - img "♥️"
+      - text: Yesterday
+    - text: Group members have changed. Click to view
+    - gridcell "5 unread messages": "5"
+- text: Your personal messages are
+- button "end-to-end encrypted"
+- button "Get WhatsApp for Windows"
+- banner:
+  - button "Profile details":
+    - img
+  - button "Whatsapp Automation"
+  - button "Search…"
+  - button "Menu"
+- text: Today
+- button "Syncing older messages. Click to see progress."
+- text: Today
+- 'row "Whatsapp Automation: Please upload an image using WhatsApp (click a camera icon and choose a photo) 8:20 AM"': Please upload an image using WhatsApp (click a camera icon and choose a photo) 8:20 AM
+- 'row "You: ✅ ✅ ✅ 8:20 AM Read"':
+  - img "✅"
+  - img "✅"
+  - img "✅"
+  - button "8:20 AM Read":
+    - text: 8:20 AM
+    - img "msg-dblcheck"
+- 'row "Whatsapp Automation: Please upload an image using WhatsApp (click a camera icon and choose a photo) 8:20 AM"': Please upload an image using WhatsApp (click a camera icon and choose a photo) 8:20 AM
+- 'row "You: Open picture 8:21 AM Read Forward media"':
+  - button "Open picture":
+    - img
+    - img
+  - button "8:21 AM Read":
+    - text: 8:21 AM
+    - img "msg-dblcheck"
+  - button "Forward media"
+- 'row "Whatsapp Automation: Please wait while we upload your receipt! 😊 🚀 8:21 AM"':
+  - text: Please wait while we upload your receipt!
+  - img "😊"
+  - img "🚀"
+  - text: 8:21 AM
+- 'row "Whatsapp Automation: Thank you for your submission! 🎉 We’ve received your details and will proceed with validation. ✅ You’ll receive your RM3 Touch ''n Go eWallet PIN within 5 working days once the verification is complete. Reminder: Please keep your receipt and do not discard it until the verification process is fully completed. 8:21 AM Submit New Receipt Chat with Agent"':
+  - text: Thank you for your submission!
+  - img "🎉"
+  - text: We’ve received your details and will proceed with validation.
+  - img "✅"
+  - text: You’ll receive your RM3 Touch 'n Go eWallet PIN within 5 working days once the verification is complete.
+  - strong: Reminder
+  - text: ": Please keep your receipt and do not discard it until the verification process is fully completed. 8:21 AM"
+  - button "Submit New Receipt"
+  - button "Chat with Agent" [disabled]
+- 'row "You: Quoted message Chat with Agent 8:22 AM Read"':
+  - button "Quoted message":
+    - text: Whatsapp Automation
+    - 'button "Thank you for your submission! 🎉 We’ve received your details and will proceed with validation. ✅ You’ll receive your RM3 Touch ''n Go eWallet PIN within 5 working days once the verification is complete. Reminder: Please keep your receipt and do not discard it until the verification process is fully completed."':
+      - text: Thank you for your submission!
+      - img "🎉"
+      - text: We’ve received your details and will proceed with validation.
+      - img "✅"
+      - text: You’ll receive your RM3 Touch 'n Go eWallet PIN within 5 working days once the verification is complete.
+      - strong: Reminder
+      - text: ": Please keep your receipt and do not discard it until the verification process is fully completed."
+  - text: Chat with Agent
+  - button "8:22 AM Read":
+    - text: 8:22 AM
+    - img "msg-dblcheck"
+- 'row "Whatsapp Automation: Hi there! Got a question? Just type in your enquiry below — our Agent will get back to you within 3 working days. We''re here to help! 😊 8:22 AM"':
+  - text: Hi there! Got a question? Just type in your enquiry below — our Agent will get back to you within 3 working days. We're here to help!
+  - img "😊"
+  - text: 8:22 AM
+- 'row "You: Hi, how to do this.... 8:22 AM Read"':
+  - text: Hi, how to do this....
+  - button "8:22 AM Read":
+    - text: 8:22 AM
+    - img "msg-dblcheck"
+- 'row "Whatsapp Automation: Thanks for your question! 😊 Our friendly agent will get back to you soon. 🌟 8:22 AM"':
+  - text: Thanks for your question!
+  - img "😊"
+  - text: Our friendly agent will get back to you soon.
+  - img "🌟"
+  - text: 8:22 AM
+- 'row "You: kuhentest 8:32 AM Read"':
+  - text: kuhentest
+  - button "8:32 AM Read":
+    - text: 8:32 AM
+    - img "msg-dblcheck"
+- 'row "Whatsapp Automation: Open picture 8:32 AM Forward media"':
+  - button "Open picture":
+    - img
+    - img
+  - text: 8:32 AM
+  - button "Forward media"
+- 'row "Whatsapp Automation: 💙 Welcome to Fluimucil Buy and Redeem Campaign!! Thank you for your purchase! Follow these easy steps to redeem your RM3 TnG reward on each box you buy: ✅ Step 1: Buy 1 unit of Fluimucil at any participating outlet. ✅ Step 2: Send us your Name. ✅ Step 3: Snap and upload a clear photo of your receipt (max 10 redemptions per user). ✅ Step 4: We’ll verify and send your RM3 TnG PIN within 5 working days. 👉 Tap “Proceed” below to begin. By continuing, you agree to our [Terms & Conditions]. 8:32 AM Proceed"':
+  - img "💙"
+  - text: "Welcome to Fluimucil Buy and Redeem Campaign!! Thank you for your purchase! Follow these easy steps to redeem your RM3 TnG reward on each box you buy:"
+  - img "✅"
+  - text: "Step 1: Buy 1 unit of Fluimucil at any participating outlet."
+  - img "✅"
+  - text: "Step 2: Send us your Name."
+  - img "✅"
+  - text: "Step 3: Snap and upload a clear photo of your receipt (max 10 redemptions per user)."
+  - img "✅"
+  - text: "Step 4: We’ll verify and send your RM3 TnG PIN within 5 working days."
+  - img "👉"
+  - text: Tap “Proceed” below to begin. By continuing, you agree to our [Terms & Conditions]. 8:32 AM
+  - button "Proceed" [disabled]
+- 'row "You: Quoted message Proceed 8:32 AM Read"':
+  - button "Quoted message":
+    - text: Whatsapp Automation
+    - 'button "💙 Welcome to Fluimucil Buy and Redeem Campaign!! Thank you for your purchase! Follow these easy steps to redeem your RM3 TnG reward on each box you buy: ✅ Step 1: Buy 1 unit of Fluimucil at any participating outlet. ✅ Step 2: Send us your Name. ✅ Step 3: Snap and upload a clear photo of your receipt (max 10 redemptions per user). ✅ Step 4: We’ll verify and send your RM3 TnG PIN within 5 working days. 👉 Tap “Proceed” below to begin. By continuing, you agree to our [Terms & Conditions]."':
+      - img "💙"
+      - text: "Welcome to Fluimucil Buy and Redeem Campaign!! Thank you for your purchase! Follow these easy steps to redeem your RM3 TnG reward on each box you buy:"
+      - img "✅"
+      - text: "Step 1: Buy 1 unit of Fluimucil at any participating outlet."
+      - img "✅"
+      - text: "Step 2: Send us your Name."
+      - img "✅"
+      - text: "Step 3: Snap and upload a clear photo of your receipt (max 10 redemptions per user)."
+      - img "✅"
+      - text: "Step 4: We’ll verify and send your RM3 TnG PIN within 5 working days."
+      - img "👉"
+      - text: Tap “Proceed” below to begin. By continuing, you agree to our [Terms & Conditions].
+  - text: Proceed
+  - button "8:32 AM Read":
+    - text: 8:32 AM
+    - img "msg-dblcheck"
+- 'row "Whatsapp Automation: Great! Let''s move to the next step. 😊 Please reply with your Name. 8:32 AM"':
+  - text: Great! Let's move to the next step.
+  - img "😊"
+  - text: Please reply with your Name. 8:32 AM
+- 'row "You: 123 8:33 AM Read Privacy info"':
+  - text: "123"
+  - button "8:33 AM Read":
+    - text: 8:33 AM
+    - img "msg-dblcheck"
+  - button "Privacy info"
+- row "This business is now using a secure service from Meta to manage this chat. Click to learn more.":
+  - button "This business is now using a secure service from Meta to manage this chat. Click to learn more."
+- 'row "Whatsapp Automation: Open picture 8:33 AM Forward media"':
+  - button "Open picture":
+    - img
+    - img
+  - text: 8:33 AM
+  - button "Forward media"
+- 'row "Whatsapp Automation: Please submit your receipt as a proof of purchase. The receipt must contain the following information: a. Store Name b. Receipt Date c. Product Name d. Product amount e. Total receipt amount f. Receipt number ✨ A clear and readable receipt image is very helpful for the validation process ✨ 8:33 AM"':
+  - text: "Please submit your receipt as a proof of purchase. The receipt must contain the following information: a. Store Name b. Receipt Date c. Product Name d. Product amount e. Total receipt amount f. Receipt number"
+  - img "✨"
+  - text: A clear and readable receipt image is very helpful for the validation process
+  - img "✨"
+  - text: 8:33 AM
+- contentinfo:
+  - button "Attach"
+  - button "Expressions picker"
+  - textbox "Type a message":
+    - paragraph
+  - button "Voice message"
+```

@@ -46,7 +46,7 @@ test.describe('WhatsApp Name Validation Tests', () => {
                 await page.waitForTimeout(9000);
 
                 // Error name test cases
-              /*  const invalidNames = ['123', '✅✅✅', 'Kuhen test ✅', 'Kuhen test 123'];
+                const invalidNames = ['123', '✅✅✅', 'Kuhen test ✅', 'Kuhen test 123'];
 
                 for (const [index, invalidName] of invalidNames.entries()) {
                     console.log(`🚫 Sending invalid name #${index + 1}: "${invalidName}"`);
@@ -100,7 +100,7 @@ test.describe('WhatsApp Name Validation Tests', () => {
                             console.log(`⚠️ No explicit rejection found for "${invalidName}", but system didn't continue.`);
                         }
                     }
-                }*/
+                }
 
                 // Finally, send the correct name
                 console.log(`✅ Sending correct name: "${TEST_CONFIG.userName}"`);
@@ -147,3 +147,7 @@ test.describe('WhatsApp Name Validation Tests', () => {
         }
     });
 });
+
+
+
+

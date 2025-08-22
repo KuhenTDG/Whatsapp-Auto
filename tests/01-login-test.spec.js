@@ -37,7 +37,7 @@ test.describe('WhatsApp Web Tests', () => {
     // Handle QR code scanning once for all tests
     await page.waitForTimeout(5000);
     
-    try {
+    try { 
       // Check if QR code exists
       const qrCode = await page.waitForSelector('canvas[aria-label="Scan me!"]', { timeout: 3000 });
       if (qrCode) {

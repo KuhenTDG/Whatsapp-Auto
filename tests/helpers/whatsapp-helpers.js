@@ -3,7 +3,7 @@
 // Configuration
 const CONFIG = {
   contactName: "Whatsapp Automation",
-  contactNumber: "+60 3-9771 1660",
+  contactNumber: "+60 11-2635 2582",
   timeouts: {
     messageDelay: 8000,
     loginTimeout: 120000
@@ -60,18 +60,20 @@ async function loginAndOpenContact(page, test) {
       throw new Error('Could not find search box');
     }
 
-    // Try searching by name first
+    // First try: Search by contact name
     await searchBox.click();
     await searchBox.fill(''); // Clear existing text
     await searchBox.type(CONFIG.contactName, { delay: 100 });
     await page.waitForSelector('[data-testid="cell-frame-container"], div[role="listitem"]', { timeout: 1000 }).catch(() => { });
 
-    // Look for contact result
+    // Look for contact result by name
     const contactSelectors = [
-      '[data-testid="cell-frame-container"]',
+      `span[title="${CONFIG.contactName}"]`,
       `span[title*="${CONFIG.contactName}"]`,
+      '[data-testid="cell-frame-container"]',
       'div[role="listitem"]'
     ];
+
 
     let contactResult = null;
     for (const selector of contactSelectors) {
@@ -86,9 +88,21 @@ async function loginAndOpenContact(page, test) {
     // If not found by name, try phone number
     if (!contactResult && CONFIG.contactNumber) {
       console.log(`📞 Trying phone number: ${CONFIG.contactNumber}`);
-      await searchBox.fill('');
+
+      // Clear search and try phone number
+      await searchBox.click();
+      await page.keyboard.press('Control+A');
+      await page.keyboard.press('Delete');
       await searchBox.type(CONFIG.contactNumber, { delay: 100 });
-      await page.waitForTimeout(3000);
+      await page.waitForSelector('[data-testid="cell-frame-container"], div[role="listitem"]', { timeout: 1000 }).catch(() => { });
+
+      // Look for contact result by phone number
+      const contactSelectors = [
+        `span[title*="${CONFIG.contactNumber}"]`,
+        `span[title="${CONFIG.contactNumber}"]`,
+        '[data-testid="cell-frame-container"]',
+        'div[role="listitem"]'
+      ];
 
       for (const selector of contactSelectors) {
         try {
@@ -159,27 +173,55 @@ async function uploadReceipt(page, receiptPath) {
     await fileInput.setInputFiles(absolutePath);
 
     // Wait for image preview dialog to appear
-    await page.waitForSelector('div[role="dialog"] img', { timeout: 10000 });
+    await page.waitForSelector('xpath=//*[@id="app"]/div[1]/div[3]/div/div[2]/div[2]/span/div/div/div/div[2]/div/div[1]/div[2]/div/div/div/canvas[2]', { timeout: 30000 });
 
     // Wait for the send button to be enabled
     const sendButton = page.locator('div[role="button"][aria-label="Send"]:not([aria-disabled="true"])');
-    await sendButton.waitFor({ state: 'visible', timeout: 10000 });
+    await sendButton.waitFor({ state: 'visible', timeout: 60000 });
 
-    // Add caption if caption box is present
-    const captionInput = page.locator('div[role="dialog"] [contenteditable="true"]');
-    if (await captionInput.isVisible()) {
-      await captionInput.click();
-      await captionInput.fill('Receipt');
-      await page.waitForTimeout(300);
-    }
 
     // Click Send button
-    await sendButton.click({ force: true });
-    console.log("📸 Receipt image sent successfully!");
+    try {
+      await sendButton.click({ force: true });
+      console.log("📸 Receipt image sent automatically success!");
+    } catch (autoClickErr) {
+      // ===== TEMPORARY MANUAL STEP =====
+      console.log("⚠️ Automatic send button click failed. Please click the Send button manually in the browser.");
+      // Wait up to 30 seconds for you to click manually
+      await page.waitForTimeout(30000);
+      // ===== REMOVE THIS BLOCK WHEN AUTO CLICK WORKS =====
+    }
 
     return true;
   } catch (error) {
     console.error("❌ Receipt upload failed:", error.message);
+    throw error;
+  }
+}
+
+// Chat with agent function
+async function chatWithAgent(page, agentMessage) {
+  console.log("🤖 Looking for Chat with Agent button...");
+
+  try {
+    // Wait for the Chat with Agent button
+    await page.waitForSelector('div._ahef[role="button"]:has-text("Chat with Agent")', { timeout: 20000 });
+
+    // Click the button
+    await page.click('div._ahef[role="button"]:has-text("Chat with Agent")');
+    console.log("✅ Chat with Agent button clicked!");
+
+    await page.waitForTimeout(8000);
+
+    // Send message to agent
+    await sendMessage(page, agentMessage, "Agent enquiry");
+
+    console.log("✅ Agent enquiry sent successfully!");
+    return true;
+
+  } catch (error) {
+    console.error("❌ Error with Chat with Agent:", error.message);
+    await page.screenshot({ path: 'screenshots/chat-agent-error.png', fullPage: true });
     throw error;
   }
 }
@@ -190,9 +232,9 @@ module.exports = {
   sendMessage,
   sendMessageToBox,
   uploadReceipt,
+  chatWithAgent,
   CONFIG
 };
-
 
 
 

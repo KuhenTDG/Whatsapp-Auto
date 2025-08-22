@@ -101,7 +101,7 @@ test.describe('WhatsApp Receipt Upload Tests', () => {
 
                 await page.screenshot({ path: 'screenshots/after-error-tests.png', fullPage: true });
             });
-//======================================================================================================================
+
             // Step 4: Auto upload receipt image
             await test.step('Auto upload receipt image', async () => {
                 console.log("📸 Starting automatic receipt upload...");
